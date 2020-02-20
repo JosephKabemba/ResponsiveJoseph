@@ -1,0 +1,184 @@
+@font-face{
+    font-family: 'Baskerville';
+    src: url('libre-baskerville/LibreBaskerville-Bold.ttf') format('truetype'),
+    url('libre-baskerville/LibreBaskerville-Italic.ttf') format('truetype'),
+    url('libre-baskerville/LibreBaskerville-Regular.ttf') format('truetype');
+
+}
+
+@font-face{
+
+    font-family: 'Roboto';
+    src: url('roboto/Roboto-Regular.ttf') format('truetype'),
+    url('roboto/Roboto-Bold.ttf') format('truetype'),
+    url('roboto/Roboto-Italic.ttf') format('truetype');
+}
+
+body{
+    margin-left: 15%;
+    margin-right:15%; 
+    font-family: 'Roboto','Helvetica Neue', sans-serif;
+    background-color: rgb(200, 202, 207);
+    font-size: 1.1em;
+}
+
+h1 {
+    text-align: center;
+    font-size:4em;
+    font-family: 'Baskerville', Arial, Helvetica, sans-serif;
+    
+
+}
+
+a{
+    color: rgb(218, 3, 3);
+    font-weight: bold;
+}
+
+h2{
+    font-family: 'Baskerville', Arial, Helvetica, sans-serif;
+    color: rgb(218, 3, 3);
+  
+}
+
+table{
+    border-collapse: collapse;
+}
+
+#entête >th{
+        background-color:rgb(56, 55, 55);
+        color: white;
+        padding: 0.3em;
+}
+
+td, th{
+    padding: 1%;
+}
+tr:nth-of-type(even)> td, tr:nth-of-type(even)> th{
+    background-color: rgb(224, 224, 224);
+  
+}
+
+tr:hover> td, tr:hover> th{
+    background-color: rgb(150, 150, 150);
+}
+
+figure{
+    border: 3px solid rgb(218, 3, 3);
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 2%;
+    background-color: rgb(59, 59, 59);
+    padding: 5%;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+}
+
+figcaption{
+
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+   
+
+.paragraphe{
+    border: 3px dashed rgb(63, 3, 131);
+    padding: 22px;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: rgb(63, 3, 131);
+    background-color: rgb(196, 182, 223);
+    line-height: 1.7em;
+
+}
+
+h2 + p{
+    text-align: justify;
+}
+
+
+/*Pour les téléphones mobiles*/
+@media (max-width: 576px) { 
+
+    body{
+        margin-right: 2%;
+        margin-left: 2%;
+        text-align: justify;
+    }
+    h1{
+        font-size: 3em;
+    }
+
+    table{
+        border: 1px solid black;
+    }
+
+    tr:nth-of-type(even)> td, tr:nth-of-type(even)> th{
+        background-color: rgb(200, 202, 207);
+        padding: 2%; 
+    }
+    tr:hover> td, tr:hover> th{
+        background-color: rgb(150, 150, 150);
+    }
+
+    figure{
+        border: none;
+        border-radius: 0%;
+        padding: 0%;
+        background-color: rgb(184, 187, 194); 
+        
+    }
+
+    figcaption{
+        color: black;
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    h2{
+        font-weight: bold;
+    }
+    pre{
+        font-size: 0.68em;
+    }
+    .cache{
+        display: none;
+    }
+
+
+}
+
+/*Pour les tablettes*/
+@media (max-width: 768px) { 
+
+    body{
+        margin-right: 2%;
+        margin-left: 2%;
+        text-align: justify;
+    }
+    h1{
+        font-size: 2.3em;
+    }
+
+    figcaption{
+        font-weight: normal;
+    }
+
+    h2{
+        font-weight: bold;
+    }
+    .paragraphe{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+}
